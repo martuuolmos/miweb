@@ -1,0 +1,25 @@
+% load static %
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <link href = "% static 'css/styles.css'%" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Bienvenido a la Página 2</h1>
+    <p>Este es el contenido de la primera página.</p>
+    <nav>
+        <ul>
+            <li><a href="{% url 'index' %}">Página 1</a></li>
+            <li><a href="{% url 'pagina1' %}">Página 2</a></li>
+            <li><a href="{% url 'pagina2' %}">Página 3</a></li>
+        </ul>
+    </nav>
+
+</body>
+</html>

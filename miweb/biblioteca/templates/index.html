@@ -1,0 +1,37 @@
+( % load static %)
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <link href = "% static 'css/styles.css'%" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    
+    c!
+
+    <h1>Bienvenido al inicio</h1>
+    <p>Este es el contenido de la primera página.</p>
+    <nav>
+        <ul>
+            <li><a href="{% url 'index' %}">inicio</a></li>
+            <li><a href="{% url 'pagina1' %}">Página 2</a></li>
+            <li><a href="{% url 'pagina2' %}">Página 3</a></li>
+        </ul>
+    </nav>
+<div></div>
+    <h1>Lista de Alumnos </h1>
+    <ul>
+        {% for alumno in alumnos %}
+            <li> {{ alumno.nombre }} - {{ alumno.curso }} - {{ alumno.edad }} años </li>
+        {% empty %}
+            <li>No hay alumnos registrados.</li>
+        {% endfor %}
+    </ul>
+</div>
+</body>
+</html>
