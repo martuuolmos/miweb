@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from .models import Alumnos
 
-# Create your views here.
+# Crear las vistas del sitio.
 def index(request):
     alumnos = Alumnos.objects.all()
     print(Alumnos) 
